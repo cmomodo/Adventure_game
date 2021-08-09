@@ -1,30 +1,20 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
+//to check your reponse in the room.
+
+//
+int room_Display(int answer);
 
 
-void displayRoom(const vector<char>& board);
+int room_Display(int answer){
 
-using namespace std;
-void displayRoom(const std::vector<char>& board)
-{
-    cout << "\n\n" <<board[0] << "Go Straight  " << board[1] << "Open The door  \n" << board[2];
-    cout << "\n\t" << "Choose Your options: ";
-    cout <<"\n\t" << board[3] << "Go left " <<board[4]<<"  Use the Elevator \n\n"<<board[5];
-    cout <<"\n\t" <<"Choose your options: ";
-    cout <<"\n\t" <<board[6] << "Head for the Ground floor " <<board[7] << "Go right \n\n"<<board[8];
-    cout <<"\n\t" << "Choose your options: ";
-    cout << "\n\t" <<board[9] << "If you see a way out " << board[10] << "Approach it straight away \n\n" << board[11];
-    cout <<"\n\t" << "Choose Your options: ";
-    cout << "\n\t" <<board[12] << "Go right " << board[13] << "There's a window \n\n" << board[14];
-    cout <<"\n\t" << "Choose Your options: ";
-    cout << "\n\t" <<board[15] << "Jump out of the window " << board[16] << "Go right \n\n" << board[17];
-    cout <<"\n\t" << "Choose Your options: ";
-    cout << "\n\t" <<board[18] << "You will see a fire " << board[19] << "The first exit is displayed on the left hand side \n\n" << board[20];
-    cout <<"\n\t" << "Congratulations you've escaped";
-    
+    cout << "You see a door on  your left, are you going left  or right\n";
+    cout <<"You reach the elevator are you going left or right\n";
+    cout <<"You are in the ground floor are you going left or right\n";
+    cout <<"You come through and see and exit on the left are you going to use left or right?\n";
+    cout << "There's a window on your right are you going left or right\n";
+    cout << "You can jump on the left wall, are you going left or right\n";
+    cout << "The escape room is on the right, are you going right or left\n";
 
+    cin >> answer;
 
-
-}
+    return answer;
+};
